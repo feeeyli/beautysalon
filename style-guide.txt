@@ -1,0 +1,23 @@
+(1c) primary color - #ff3366
+
+(2c) second color - #f67797
+
+(d) dark - #000000
+
+(g) gray - #767676
+
+(lg) light gray - #e4e4e4
+
+(1bg) background 1 - #f9f9f9
+
+(2bg) background 2 - #ffffff
+
+gradient - 1c => 2c(34%)
+
+----------------
+
+side padding - 123
+
+height logo - 25
+
+desenhos - 80
