@@ -1,7 +1,7 @@
-<p align="center">![](./src/assets/Logo.svg)</p>
+<p align="center"><img alt="Beauty Salon" src=".github/logo.svg" /></p>
 
 # Beauty Salon
-<p align="center">![](./src/design/preview.png)</p>
+<p align="center"><img alt="Preview" src=".github/preview.png" /></p>
 
 Este projeto foi desenvolvido durante a missão Origin da NLW #6. E aqui está a minha execução.
 
