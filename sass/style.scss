@@ -9,9 +9,10 @@
 @import "general/functions";
 @import "general/reset";
 @import "general/z-index";
+@import "general/units";
 
 :root {
-	@each $name, $color in $-colors {
+	@each $name, $color in $beauty-colors {
 		--#{$name}: #{$color};
 	}
 }
@@ -20,13 +21,15 @@
 // Layout ( eg. Header, Main, Footer )
 // ==========================================================================
 
-// @import "layout/";
+@import "layout/header";
+@import "layout/main";
 
 // ==========================================================================
 // Component ( eg. Buttons, Texts )
 // ==========================================================================
 
-// @import "component/";
+@import "components/texts";
+@import "components/button";
 
 // ==========================================================================
 // Theme ( eg. Dark )

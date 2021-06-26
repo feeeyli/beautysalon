@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: Poppins, consolas;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ff3366;
+  --second: #f67797;
+  --dark: #000000;
+  --gray: #767676;
+  --light-gray: #e4e4e4;
+  --background-1: #f9f9f9;
+  --background-2: #ffffff;
+  --gradient: linear-gradient(90deg, #ff3366 0%, #f6799957 100%);
+}
+
+header {
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12.3rem;
+  border-bottom: 1px solid var(--light-gray);
+  position: fixed;
+  top: 0;
+  width: calc(100% - (12.3rem * 2 ));
+  background: white;
+  z-index: 100;
+}
+header .logo {
+  height: 2.5rem;
+}
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  margin: 0 1.2rem;
+  padding: 2rem 0;
+  color: var(--gray);
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+header nav a:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+main {
+  padding: 6.5rem 12.3rem 0;
+}
+main .start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 6.5rem);
+}
+main .start .content {
+  width: 32rem;
+}
+main .start .content .button {
+  margin-top: 0.8rem;
+}
+main .start .image {
+  position: relative;
+}
+main .start .image * {
+  border-radius: 0.5rem;
+}
+main .start .image span {
+  height: 37.5rem;
+  width: 56.1rem;
+  z-index: -1;
+  position: absolute;
+  top: -6rem;
+  right: -6rem;
+  background: var(--second);
+}
+main .about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 6.5rem);
+}
+main .about-us .content {
+  width: 64rem;
+}
+main .about-us .image {
+  left: 0;
+  position: relative;
+}
+main .about-us .image * {
+  border-radius: 0.5rem;
+}
+main .about-us .image span {
+  height: 41.2rem;
+  width: 57.1rem;
+  z-index: -1;
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+  background: var(--second);
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--dark);
+  line-height: 3.6rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  color: var(--gray);
+  line-height: 2.2rem;
+}
+
+.button {
+  height: 4rem;
+  width: 20rem;
+  border: 0;
+  outline: 0;
+  border-radius: 0.3rem;
+  color: white;
+  background: var(--primary);
+  transition: 0.1s ease-in-out;
+}
+.button:hover {
+  background: var(--second);
+}
+.button:active {
+  transform: translateY(0.1rem);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+header {
+    height: 6.4rem;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	padding: 0 12.3rem;
+	border-bottom: 1px solid var(--light-gray);
+    position: fixed;
+    top: 0;
+    width: calc(100% - (12.3rem * 2 ));
+    background: white;
+    z-index: 100;
+
+    .logo {
+        height: 2.5rem;
+    }
+
+    nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        a {
+            margin: 0 1.2rem;
+            padding: 2rem 0;
+            color: var(--gray);
+            font-size: 1.4rem;
+            font-weight: 400;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                color: var(--primary);
+                border-color: var(--primary);
+            }
+        }
+    }
+}

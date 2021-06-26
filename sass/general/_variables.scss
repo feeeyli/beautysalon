@@ -20,22 +20,18 @@ $webfatorial-colors: (
 );
 
 
-// webfatorial
+// beauty
 // ==========================================================================
 
-$sweava-colors: (
-  'sweava-dark'    : #252b42,
-  'sweava-wine'    : #200E32,
-  'sweava-purple'  : #5956e9,
-  'sweava-purple-2': #7485c1,
-  'sweava-pink'    : #fab8c3,
-  'sweava-yellow'  : #ffdc5f,
-  'sweava-blue'    : #58c0ea,
-  'sweava-blue-2'  : #7dccec,
-  'sweava-gray-1'  : #f6f6f9,
-  'sweava-gray-2'  : #e3e3e3,
-  'sweava-gray-3'  : #737373,
-  'sweava-white'   : #fff,
+$beauty-colors: (
+  'primary'      : #ff3366,
+  'second'       : #f67797,
+  'dark'         : #000000,
+  'gray'         : #767676,
+  'light-gray'   : #e4e4e4,
+  'background-1' : #f9f9f9,
+  'background-2' : #ffffff,
+  'gradient'     : linear-gradient(90deg, #ff3366 0%, #f6799957 100%)
 );
 
 
