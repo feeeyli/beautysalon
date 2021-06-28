@@ -1,0 +1,42 @@
+footer {
+	height: 20vh;
+	background: var(--primary);
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 0 var(--global-side-padding);
+
+	div {
+		.logo {
+			filter: brightness(5);
+			margin-bottom: .8rem;
+		}
+
+		span {
+			display: block;
+			color: white;
+			font-size: 1.2rem;
+			font-weight: 200;
+			letter-spacing: .1rem;
+			margin: .4rem 0;
+		}
+	}
+
+	ul {
+		list-style: none;
+		display: flex;
+		align-items: center;
+
+		li {
+			padding: .4rem;
+			margin: .8rem;
+
+			svg {
+				height: 2rem;
+				color: white;
+			}
+		}
+	}
+}

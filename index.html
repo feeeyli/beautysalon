@@ -17,7 +17,8 @@
 	<body>
         <header>
 			<img src="./src/assets/Logo.svg" alt="Logo da Beauty Salon" class="logo">
-			<nav>
+			<a href="" class="vegie-menu"><span class="icon"></span></a>
+			<nav class="menu">
 				<a href="#start">Início</a>
 				<a href="#about-us">Sobre</a>
 				<a href="#services">Serviços</a>
@@ -26,7 +27,7 @@
 			</nav>
 		</header>
 		<main>
-			<div class="start">
+			<section id="start">
 				<div class="content">
 					<h1 class="title">Saúde natural para os seus cabelos</h1>
 					<p class="description">Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
@@ -36,8 +37,8 @@
 					<img src="./src/assets/Img-1.png" alt="Cabelereira penteando o cabelo de uma cliente">
 					<span></span>
 				</div>
-			</div>
-			<div class="about-us">
+			</section>
+			<section id="about-us">
 				<div class="image">
 					<img src="./src/assets/Img.png" alt="Três cabelereiras segurando tesouras e pentes">
 					<span></span>
@@ -46,17 +47,19 @@
 					<h2 class="title">Sobre nós</h2>
 					<p class="description">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, sed nemo quo aliquam odit ipsum culpa, temporibus quae voluptas hic molestiae amet vitae ullam! Possimus sapiente nisi doloremque non illo!
-						<br>
+						<br><br>
 						Necessitatibus consequuntur, laudantium quae quisquam deleniti, aspernatur qui, quasi quo quod nostrum accusantium repellendus in quibusdam animi officiis enim inventore tempore molestias. Dolorum dolor ab beatae, saepe totam officia consequatur!
-						<br>
+						<br><br>
 						Accusantium cumque quasi quod, delectus nemo, illo voluptatum, rem recusandae ipsum eligendi enim aspernatur veniam a quos natus tenetur alias dignissimos inventore quia repudiandae facilis obcaecati reiciendis ex velit! Debitis.
 					</p>
 				</div>
-			</div>
-			<div class="services">
-				<h2 class="title">Serviços</h2>
-				<p class="description">Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
-				<div>
+			</section>
+			<section id="services">
+				<div class="content">
+					<h2 class="title">Serviços</h2>
+					<p class="description">Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
+				</div>
+				<div class="cards">
 					<div class="service">
 						<img src="./src/assets/Icon.svg" alt="Ilustração mulher com negocio no cabelo">
 						<h3 class="title">Terapia capilar</h3>
@@ -73,38 +76,38 @@
 						<p class="description">O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo.</p>
 					</div>
 				</div>
-			</div>
-			<div class="testimonials">
+			</section>
+			<section id="testimonials">
 				<h2 class="title">Depoimentos de quem já passou por aqui</h2>
-				<div>
+				<div class="cards">
 					<div class="testimonial">
-						<p>Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.</p>
+						<p class="description"><strong>"</strong> Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.</p>
 						<div class="profile">
 							<img src="./src/assets/profile1.png" alt="Avatar">
 							<span class="name">Wanessa Souza</span>
 						</div>
 					</div>
 					<div class="testimonial">
-						<p>Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon.</p>
+						<p class="description"><strong>"</strong> Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon.</p>
 						<div class="profile">
 							<img src="./src/assets/profile2.png" alt="Avatar">
 							<span class="name">Luna Falcão</span>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="contact">
+			</section>
+			<section id="contact">
 				<div>
 					<h2 class="title">Entre em contato com a gente!</h2>
 					<p class="description">Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
-					<button class="button">Entrar em contato</button>
+					<button class="button"><i data-feather="message-circle"></i>Entrar em contato</button>
 				</div>
 				<ul class="infos">
-					<li>11 99845-6754</li>
-					<li>R. Amauri Souza, 346</li>
-					<li>contato@beautysalon.com</li>
+					<li><i data-feather="phone"></i>11 99845-6754</li>
+					<li><i data-feather="map-pin"></i>R. Amauri Souza, 346</li>
+					<li><i data-feather="mail"></i>contato@beautysalon.com</li>
 				</ul>
-			</div>
+			</section>
 		</main>
 		<footer>
 			<div>
@@ -113,13 +116,15 @@
 				<span class="rights">Todos os direitos reservados.</span>
 			</div>
 			<ul>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
+				<li><a href=""><i data-feather="instagram"></i></a></li>
+				<li><a href=""><i data-feather="facebook"></i></a></li>
+				<li><a href=""><i data-feather="youtube"></i></a></li>
 			</ul>
 		</footer>
     </body>
 
 	<!-- Script -->
 	<script src="./scripts/index.js"></script>
+	<script src="https://unpkg.com/feather-icons"></script>
+	<script>feather.replace()</script>
 </html>

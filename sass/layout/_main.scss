@@ -1,7 +1,11 @@
-main {
-	padding: 6.5rem 12.3rem 0;
+@import url("https://fonts.googleapis.com/css2?family=Coustard&display=swap");
 
-	.start {
+main {
+	section {
+		padding: 0 var(--global-side-padding);
+	}
+
+	#start {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -12,7 +16,7 @@ main {
 			width: 32rem;
 
 			.button {
-				margin-top: .8rem;
+				margin-top: 0.8rem;
 			}
 		}
 
@@ -20,7 +24,7 @@ main {
 			position: relative;
 
 			* {
-				border-radius: .5rem;
+				border-radius: 0.5rem;
 			}
 
 			span {
@@ -37,7 +41,7 @@ main {
 		}
 	}
 
-	.about-us {
+	#about-us {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -54,7 +58,7 @@ main {
 			//margin-left: -12.8rem;
 
 			* {
-				border-radius: .5rem;
+				border-radius: 0.5rem;
 			}
 
 			span {
@@ -67,6 +71,183 @@ main {
 				left: -3rem;
 
 				background: var(--second);
+			}
+		}
+	}
+
+	#services {
+		height: 90vh;
+		background: var(--background-1);
+		border: 1px solid;
+		border-color: var(--primary) transparent;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		text-align: center;
+
+		.content {
+			width: 35.5%;
+			margin-bottom: 3.2rem;
+
+			.description {
+				color: var(--dark);
+
+				strong {
+					color: var(--primary);
+				}
+			}
+		}
+
+		.cards {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.service {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+
+				height: 40rem;
+				width: 40rem;
+
+				box-shadow: 0 0 7px 1px var(--light-gray);
+				border-radius: 7px;
+
+				margin: 1.6rem;
+
+				border-bottom: 4px solid var(--primary);
+				border-bottom-right-radius: 3px;
+				border-bottom-left-radius: 3px;
+
+				.title {
+					margin: 3.2rem 0 0.4rem;
+				}
+
+				.description {
+					width: 73%;
+				}
+			}
+		}
+	}
+
+	#testimonials {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		text-align: center;
+
+		height: 90vh;
+
+		.title {
+			margin-bottom: 3.2rem;
+		}
+
+		.cards {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			text-align: left;
+
+			.testimonial {
+				display: flex;
+				align-items: flex-start;
+				justify-content: center;
+				flex-direction: column;
+
+				height: 25rem;
+				width: 50rem;
+
+				box-shadow: 0 0 7px 1px var(--light-gray);
+				border-radius: 7px;
+
+				margin: 1.6rem;
+				padding: 0 4rem;
+
+				.description {
+					color: var(--dark);
+
+					strong {
+						color: var(--primary);
+						font-family: Coustard;
+						font-size: 3.2rem;
+						vertical-align: middle;
+					}
+				}
+
+				.profile {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.name {
+						font-size: 1.6rem;
+						color: var(--gray);
+						margin-left: 0.8rem;
+					}
+				}
+			}
+		}
+	}
+
+	#contact {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		height: 70vh;
+
+		background: var(--background-1);
+		border: 1px solid;
+		border-color: var(--primary) transparent;
+
+		div {
+			width: 32.8rem;
+
+			.button {
+				&:hover {
+					svg {
+						color: var(--primary);
+					}
+				}
+				
+				&:active {
+					svg {
+						color: white;
+					}
+				}
+
+				svg {
+					color: white;
+					margin-right: 1.2rem;
+					height: 2rem;
+				}
+			}
+		}
+
+		ul {
+			list-style: none;
+
+			li {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+
+				font-size: 1.6rem;
+				color: var(--gray);
+				margin: 1.6rem 0;
+
+				svg {
+					color: var(--primary);
+					margin-right: 1.2rem;
+				}
 			}
 		}
 	}
