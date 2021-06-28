@@ -9,8 +9,6 @@ const Scroll = {
 
 		let to = Scroll.getYOffset(element)
 
-		//Scroll.activeElement(element)
-
 		Scroll.smoothScrollTo(0, to)
 
 		if (Menu.menuIsOpened) Menu.openMenu()
@@ -31,27 +29,6 @@ const Scroll = {
 
 		let links = Scroll.headerLinks
 
-		/*if (yOffset < 834) {
-
-			Scroll.activeElement(Scroll.headerLinks[0])
-
-		} else if (yOffset >= 834 && yOffset < 1749) {
-
-			Scroll.activeElement(Scroll.headerLinks[1])
-
-		} else if (yOffset >= 1749 && yOffset < 2631) {
-
-			Scroll.activeElement(Scroll.headerLinks[2])
-
-		} else if (yOffset >= 2631 && yOffset < 3500) {
-
-			Scroll.activeElement(Scroll.headerLinks[3])
-
-		} else if (yOffset >= 3500) {
-
-			Scroll.activeElement(Scroll.headerLinks[4])
-
-		}*/
 		if (yOffset < Scroll.getYOffset(links[1])) {
 
 			Scroll.activeElement(Scroll.headerLinks[0])
@@ -105,6 +82,43 @@ const Scroll = {
 			}
 			window.scroll(newX, newY);
 		}, 1000 / 60);
+	},
+
+	hideHeader() {
+		if ( Scroll.detectScrollDir() == "up" && window.pageYOffset > 300) {
+			document.querySelector("header").classList.add("hidden")
+		} else {
+			document.querySelector("header").classList.remove("hidden")
+		}
+	},
+
+	detectScrollDir(event) {
+	    let delta = null
+		let direction = false
+
+	    if ( !event ) event = window.event;
+
+	    if ( event.wheelDelta ) {
+	        delta = event.wheelDelta / 60;
+	    } else if ( event.detail ) {
+	        delta = -event.detail / 2;
+	    }
+
+	    if ( delta !== null ) {
+	        direction = delta > 0 ? 'up' : 'down';
+	    }
+
+	    return direction;
+	},
+
+	scrollEventListeners() {
+		document.body.addEventListener("mousewheel", Scroll.verifyActualOffset)
+		window.onscroll = () => {
+			Scroll.hideHeader()
+			Scroll.verifyActualOffset()
+		}
+		document.body.addEventListener("mousewheel", Scroll.hideHeader, false);
+		document.body.addEventListener("DOMMouseScroll", Scroll.hideHeader, false);
 	}
 }
 
@@ -131,9 +145,7 @@ const App = {
 
 		Menu.toggleMenuButton.addEventListener("click", Menu.openMenu)
 
-		document.body.addEventListener("mousewheel", Scroll.verifyActualOffset)
-
-		window.onscroll = () => Scroll.verifyActualOffset()
+		Scroll.scrollEventListeners()
 
 		Scroll.verifyActualOffset()
 	}

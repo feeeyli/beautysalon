@@ -36,7 +36,10 @@ header {
   width: calc(100% - (var(--global-side-padding) * 2));
   background: white;
   z-index: 100;
-  padding: 0 var(--global-side-padding); }
+  padding: 0 var(--global-side-padding);
+  transition: 0.5s ease-in-out all; }
+  header.hidden {
+    transform: translateY(-100px); }
   header .logo {
     height: 2.5rem; }
   header nav {
@@ -73,9 +76,9 @@ header {
       width: 27px;
       display: block;
       transform: translateY(-5px);
-      transition: .5s easy-in-out all; }
+      transition: .2s ease-in-out all; }
       header .vegie-menu .icon::before {
-        transition: .5s easy-in-out all;
+        transition: .2s ease-in-out all;
         content: "";
         background: var(--primary);
         content: "";
@@ -339,10 +342,8 @@ footer {
     --global-side-padding: 3.3rem; }
 
   header .menu {
-    visibility: hidden;
-    opacity: 0;
     clip-path: circle(0% at 89% 3.6%);
-    transition: .2s ease-in-out all;
+    transition: .3s ease-in-out all;
     position: fixed;
     top: 0;
     left: 0;
@@ -352,8 +353,6 @@ footer {
     flex-direction: column;
     justify-content: center; }
     header .menu.opened {
-      visibility: visible;
-      opacity: 1;
       clip-path: circle(150% at 89% 3.6%); }
     header .menu a {
       color: var(--dark);

@@ -145,14 +145,10 @@
 
 	header {
 		.menu {
-			visibility: hidden;
-			opacity: 0;
 			clip-path: circle(0% at 89% 3.6%);
-			transition: .2s ease-in-out all;
+			transition: .3s ease-in-out all;
 
 			&.opened {
-				visibility: visible;
-				opacity: 1;
 				clip-path: circle(150% at 89% 3.6%);
 			}
 

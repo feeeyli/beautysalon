@@ -10,6 +10,11 @@ header {
 	background: white;
 	z-index: 100;
 	padding: 0 var(--global-side-padding);
+	transition: 0.5s ease-in-out all;
+
+	&.hidden {
+		transform: translateY(-100px);
+	}
 
 	.logo {
 		height: 2.5rem;
@@ -65,10 +70,10 @@ header {
 			width: 27px;
 			display: block;
 			transform: translateY(-5px);
-            transition: .5s easy-in-out all;
+            transition: .2s ease-in-out all;
 
 			&::before {
-                transition: .5s easy-in-out all;
+                transition: .2s ease-in-out all;
                 content: "";
 				background: var(--primary);
 				content: "";
