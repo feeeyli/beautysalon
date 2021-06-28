@@ -6,11 +6,16 @@
 Este projeto foi desenvolvido durante a missão Origin da NLW #6. E aqui está a minha execução.
 
 ## 💻️ Tecnologias Utilizadas
-Neste projeto utilizei:
+Neste projeto utilizei como base:
 
 - HTML
 - SCSS/SASS
 - JavaScript
+
+E algumas outras como:
+
+- Feather Icons
+- Google Fonts
 
 ## 📝️ O Projeto
 Este projeto consiste em uma landing page responsiva que trata de apresentar um salão de cabeleireiro chamado Beauty Salon.
