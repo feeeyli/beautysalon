@@ -114,10 +114,11 @@ const Scroll = {
 	scrollEventListeners() {
 		document.body.addEventListener("mousewheel", Scroll.verifyActualOffset)
 		window.onscroll = () => {
-			Scroll.hideHeader()
+			Scroll.hideHeader
 			Scroll.verifyActualOffset()
 		}
 		document.body.addEventListener("mousewheel", Scroll.hideHeader, false);
+		document.body.addEventListener("touchmove", Scroll.hideHeader, false);
 		document.body.addEventListener("DOMMouseScroll", Scroll.hideHeader, false);
 	}
 }
