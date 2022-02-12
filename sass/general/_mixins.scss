@@ -1,0 +1,7 @@
+@mixin imageShadow($x: 0, $y: 0) {
+    position: absolute;
+    top: rem(-$y);
+    bottom: rem($y);
+    right: rem(-$x);
+    left: rem($x);
+}

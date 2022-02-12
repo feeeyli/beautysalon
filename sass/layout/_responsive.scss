@@ -26,17 +26,12 @@
 	}
 
 	main {
-		#start {
-			.image {
-				img {
-					height: 30rem;
-				}
+		#intro {
+			.intro__image {
+				// width: 60%;
 
-				span {
-					height: 30rem;
-					width: 44.8rem;
-					top: -3rem;
-					right: -3rem;
+				&::before {
+					@include imageShadow(32, 24);
 				}
 			}
 		}
@@ -94,19 +89,25 @@
 	}
 
 	main {
-		#start {
+		#intro {
 			flex-direction: column-reverse;
 			justify-content: center;
 
 			text-align: center;
 
-			.content {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
+			.intro {
+				&__image {
+					width: rem(330);
+				}
 
-				.title {
-					margin-bottom: 0.4rem;
+				&__content {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+	
+					.title {
+						margin-bottom: 0.4rem;
+					}
 				}
 			}
 		}
@@ -177,17 +178,12 @@
 	}
 
 	main {
-		#start {
-			.image {
-				img {
-					height: 24rem;
-				}
+		#intro {
+			.intro__image {
+				width: 90%;
 
-				span {
-					height: 24rem;
-					width: 35.905rem;
-					top: -2rem;
-					right: -2rem;
+				&::before {
+					@include imageShadow(16, 16);
 				}
 			}
 		}

@@ -24,7 +24,7 @@ $rem-base: 16px !default;
 /// @param {Number|List} $values - One or more values to convert. Be sure to separate them with spaces and not commas. If you need to convert a comma-separated list, wrap the list in parentheses.
 /// @param {Number} $base [$rem-base] - The base value to use when calculating the `rem`. If you're using Foundation out of the box, this is 16px.
 /// @returns {List} A list of converted values.
-@function rem($values, $base: $rem-base) {
+/*@function rem($values, $base: $rem-base) {
 	$rem-values: ();
 	$count: length($values);
 
@@ -41,7 +41,7 @@ $rem-base: 16px !default;
 	}
 
 	@return $rem-values;
-}
+}*/
 
 // Converts a unitless, pixel, or rem value to em, for use in breakpoints.
 @function -zf-bp-to-em($value) {

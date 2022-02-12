@@ -1,0 +1,42 @@
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(32);
+
+    height: calc(100vh - 6.5rem);
+
+    .intro {
+        &__content {
+            width: 32rem;
+    
+            .content__button {
+                margin-top: 0.8rem;
+            }
+        }
+    
+        
+        &__image {
+            position: relative;
+            max-width: rem(512);
+            width: 50%;
+            
+            img {
+                border-radius: 0.5rem;
+                width: 100%;
+            }
+
+            &::before {
+                content: "";
+            
+                border-radius: 0.5rem;
+            
+                z-index: -1;
+                
+                @include imageShadow(32, 24);
+
+                background: var(--second);
+            }
+        }
+    }
+}
